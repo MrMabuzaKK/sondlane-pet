@@ -37,10 +37,17 @@
              solutions for clients in all nine provinces of South Africa.</p>
           <a href="services.html" class="info-btn">Services</a>
         </div>
+
       </div>
+
       
-    </section>
-      
+    <div class="content">
+      <div class="info">
+    <img src="./img/okay.png" id="img">
+        
+      </div>
+
+    </div>
 
 
     <footer>
@@ -53,4 +60,11 @@
 
   </body>
 </html>
+
+<script>
+  window.onresize = function() {
+    var containerWidth = document.getElementById('img').parentElement.clientWidth;
+    document.getElementById('img').style.width = containerWidth + 'px';
+  }
+</script>
       

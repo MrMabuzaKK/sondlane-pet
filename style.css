@@ -16,7 +16,7 @@ section{
   justify-content: flex-start;
   background-size: cover;
   background-position: center;
-  background: url(img/pexels-ekaterinabelinskaya-4744709.jpg);
+  background: linear-gradient(white,rgb(87, 169, 224));
   
   
 }

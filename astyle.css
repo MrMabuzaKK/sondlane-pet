@@ -14,7 +14,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url(img/map.png);
+  background: linear-gradient(rgb(108, 161, 230), white);
   background-size: cover;
   background-position: center;
 }
