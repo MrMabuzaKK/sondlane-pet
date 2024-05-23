@@ -1,76 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif; 
+:root{
+  --input-background-color: rgb(255, 251, 251);
 }
-
-section{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: linear-gradient(white,rgb(87, 169, 224));
-  background-size: cover;
-  background-position: center;
-}
-
-
-
-header{
-  position: relative;
-  top: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo{
-  position: relative;
-  color: #000;
-  font-size: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-header .navigation a{
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 2px 15px;
-  border-radius: 20px;
-  transition: 0.3s;
-  transition-property: background;
-}
-
-header .navigation a:not(:last-child){
-  margin-right: 30px;
-}
-
-header .navigation a:hover{
-  background: #3ab2d6;
-}
-
-body{
-  min-height: 100vh;
-  background-color: white;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-section{
   width: 100%;
   display: flex;
@@ -109,7 +39,7 @@ body{
 }
 
 .contact-form .text-box{
-  background: #87acf7;
+  background: var(--input-background-color);
   color: #252323;
   border: none;
   width: calc(50% - 10px);
@@ -127,7 +57,7 @@ body{
 }
 
 .contact-form textarea{
-  background: #87acf7;
+  background: var(--input-background-color);
   color: #252323;
   border: none;
   width: 100%;
@@ -204,7 +134,8 @@ body{
 
 @media screen and (max-width: 950px){
   .contact-section{
-    flex-direction: column;
+    flex-direction: column-reverse;
+
   }
 
   .contact-info, .contact-form{
