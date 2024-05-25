@@ -1,6 +1,5 @@
 
 .content{
-  max-width: 650px;
   margin: 60px 100px;
 }
 
@@ -210,6 +209,10 @@ label{
     width: 100%;
     position: relative;
     border: 10px solid white;
+  }
+
+  .map-img-container img{
+    width: 100%;
   }
 
   

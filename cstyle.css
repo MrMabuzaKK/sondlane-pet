@@ -1,35 +1,44 @@
 :root{
-  --input-background-color: rgb(255, 251, 251);
+  --input-background-color: rgba(255, 251, 251, 0.249);
+  --boder-color:#1e8585;
+}
+section{
+  padding: 3rem 12rem;
+  
 }
 .contact-section{
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .contact-info{
   color: rgb(17, 16, 16);
   max-width: 500px;
   line-height: 65px;
-  padding-left: 50px;
-  font-size: 18px;
 }
-
+.contact-info a{
+  text-decoration:none;
+  color:#080808
+}
 .contact-info i{
   margin-right: 20px;
   font-size: 25px;
 }
 
 .contact-form{
-  max-width: 700px;
+  min-width: 50%;
   margin-right: 50px;
 }
-
-.contact-info, .contact-form{
-  flex: 1;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-
 .contact-form h2{
   color: #1e8585;
   text-align: center;
@@ -41,15 +50,13 @@
 .contact-form .text-box{
   background: var(--input-background-color);
   color: #252323;
-  border: none;
-  width: calc(50% - 10px);
   height: 50px;
   padding: 12px;
   font-size: 15px;
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  opacity: 0.9;
+  
 }
 
 .contact-form .text-box:first-child{
@@ -71,7 +78,9 @@
   margin-bottom: 20px;
   opacity: 0.9;
 }
-
+.contact-form textarea, .contact-form input {
+  border: 2px solid var(--boder-color);
+}
 .contact-form .send-btn{
   float: right;
   background: #1e8585;
@@ -131,17 +140,14 @@
   }
 
 
-
 @media screen and (max-width: 950px){
   .contact-section{
     flex-direction: column-reverse;
-
   }
-
-  .contact-info, .contact-form{
-    margin: 30px 50px;
+  .contact-form {
+    margin-right: 0;
+    min-width: 100%;
   }
-
   .contact-form h2{
     font-size: 30px;
   }

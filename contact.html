@@ -40,19 +40,28 @@
       </div>
       <div class="contact-form">
         <h2>Contact Us</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
           <input type="hidden" name="access_key" value="0c5aca7c-739d-4280-8265-e6fd09d8fd5a">
+          
+          <input type="hidden" name="from_name" value="Sondlane Petroleum">
+          <input type="hidden" name="subject" value="Enquiry">
+
           <input type="text" name="name" class="text-box" placeholder="Your Name" required>
           <input type="email" name="email" class="text-box" placeholder="Your Email" required>
           <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" name="submit" class="send-btn" value="Send">Send</button>
+          <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
     </div>
     <!--contact section end-->
+   </section>
 
-</section>
+   <script>
+    window.onload = function() {
+      /*Resetting Form*/
+        document.getElementById("form").reset();
+    };
+  </script>
+
   </body>
-  
 </html>
-      
